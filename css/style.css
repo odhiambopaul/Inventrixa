@@ -57,34 +57,34 @@ body {
 }
 
 /* Sidebar */
+
 .sidebar {
-    width: 250px;
-    background-color: #34495e;
+    width: 260px;
     min-height: 100vh;
-    padding-top: 20px;
+    background: #1F2937;
+    padding-top: 25px;
 }
 
-/* Remove bullets */
 .sidebar ul {
     list-style: none;
 }
 
-/* Space between menu items */
 .sidebar li {
-    margin: 15px 0;
+    margin: 8px 0;
 }
 
-/* Sidebar links */
 .sidebar a {
+    display: block;
     color: white;
     text-decoration: none;
-    display: block;
-    padding: 12px 20px;
+    padding: 15px 20px;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
-/* Hover effect */
 .sidebar a:hover {
-    background-color: #2c3e50;
+    background: #10B981;
+    padding-left: 30px;
 }
 
 /* Main content */
@@ -133,4 +133,71 @@ main p {
     font-size: 28px;
     font-weight: bold;
     color: #1E3A8A;
+}
+
+/* Recent Orders */
+
+.recent-orders {
+    margin-top: 40px;
+}
+
+.recent-orders h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #1E3A8A;
+    color: white;
+}
+
+tr:hover {
+    background: #f5f5f5;
+}
+
+/* Products */
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.toolbar input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.add-btn {
+    background: #10B981;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-btn:hover {
+    background: #059669;
+}
+
+.products-table {
+    width: 100%;
 }

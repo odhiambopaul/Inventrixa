@@ -13,7 +13,7 @@
         <div class="logo">
 
         <h1>Inventrixa</h1>
-        <p>Inventory and Order Management System
+        <p>Inventory and Order Management System</p>
         </div>
 
         <div class="search">
@@ -28,50 +28,112 @@
 
     <div class="container">
 
-        <aside class="sidebar">
+       <aside class="sidebar">
 
-            <ul>
-                <li><a href="index.html">Dashboard</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="suppliers.html">Suppliers</a></li>
-                <li><a href="sales.html">Sales</a></li>
-                <li><a href="reports.html">Reports</a></li>
-                <li><a href="settings.html">Settings</a></li>
-            </ul>
+    <ul>
 
-        </aside>
+        <li><a href="index.html">📊 Dashboard</a></li>
 
-        <main>
+        <li><a href="products.html">📦 Inventory</a></li>
 
-            <h2>Dashboard</h2>
+        <li><a href="#">🛒 Orders</a></li>
 
-<div class="dashboard-cards">
+        <li><a href="#">👥 Customers</a></li>
 
-    <div class="card">
-        <h3>Total Products</h3>
-        <p>245</p>
+        <li><a href="suppliers.html">🚚 Suppliers</a></li>
+
+        <li><a href="sales.html">💰 Sales</a></li>
+
+        <li><a href="reports.html">📈 Reports</a></li>
+
+        <li><a href="settings.html">⚙️ Settings</a></li>
+
+        <li><a href="login.html">🚪 Logout</a></li>
+
+    </ul>
+
+</aside>
+
+       
+<main>
+
+    <h2>Dashboard</h2>
+
+    <!-- Dashboard Cards -->
+    <div class="dashboard-cards">
+
+        <div class="card">
+            <h3>Total Products</h3>
+            <p>245</p>
+        </div>
+
+        <div class="card">
+            <h3>Suppliers</h3>
+            <p>18</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Sales</h3>
+            <p>KSh 1,250,000</p>
+        </div>
+
+        <div class="card">
+            <h3>Low Stock</h3>
+            <p>12</p>
+        </div>
+
     </div>
 
-    <div class="card">
-        <h3>Suppliers</h3>
-        <p>18</p>
-    </div>
+    <!-- 👇 ADD THE RECENT ORDERS SECTION HERE -->
 
-    <div class="card">
-        <h3>Total Sales</h3>
-        <p>KSh 1,250,000</p>
-    </div>
+    <section class="recent-orders">
 
-    <div class="card">
-        <h3>Low Stock</h3>
-        <p>12</p>
-    </div>
+        <h2>Recent Orders</h2>
 
-</div>
+        <table>
 
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>ORD-001</td>
+                    <td>Brian Otieno</td>
+                    <td>Pending</td>
+                    <td>KSh 2,500</td>
+                </tr>
+
+                <tr>
+                    <td>ORD-002</td>
+                    <td>Grace Achieng</td>
+                    <td>Shipped</td>
+                    <td>KSh 7,800</td>
+                </tr>
+
+                <tr>
+                    <td>ORD-003</td>
+                    <td>Kevin Ouma</td>
+                    <td>Delivered</td>
+                    <td>KSh 5,400</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
     
 
-        </main>
+        
 
     </div>
 
