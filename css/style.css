@@ -13,6 +13,7 @@ body {
 
 /* Header */
 /* Header */
+/*align-items: centre;*/
 
 .header{
     display:flex;
@@ -48,7 +49,7 @@ body {
 
     font-size:18px;
 
-    cursor:pointer;
+    cursor:default;
 }
 
 /* Layout */
@@ -78,13 +79,27 @@ body {
     color: white;
     text-decoration: none;
     padding: 15px 20px;
-    transition: 0.3s;
+    transition: 2s;
     font-size: 17px;
 }
 
 .sidebar a:hover {
-    background: #10B981;
+    background: red;
     padding-left: 30px;
+}
+
+/* Active Sidebar Link */
+.sidebar a.active {
+    background: #5110b9;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-left: 4px solid rgb(255, 255, 255);
+}
+
+.sidebar i {
+    width: 25px;
+    margin-right: 10px;
+    text-align: center;
 }
 
 /* Main content */
