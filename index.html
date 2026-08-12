@@ -22,9 +22,43 @@
         </div>
 
         <div class="user">
-            <span><i class="fa-solid fa-bell"></i><br>Notifications</span>
-        <span><i class="fa-solid fa-user"></i><br>Paul</span>
+
+    <div class="notification-wrapper">
+
+        <span id="notificationButton">
+            <i class="fa-solid fa-bell"></i><br>
+            Notifications
+        </span>
+
+        <div class="notification-panel" id="notificationPanel">
+
+            <h3>Notifications</h3>
+
+            <div class="notification">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>Cooking Oil is critically low.</p>
+            </div>
+
+            <div class="notification">
+                <i class="fa-solid fa-box"></i>
+                <p>New order ORD-004 received.</p>
+            </div>
+
+            <div class="notification">
+                <i class="fa-solid fa-truck"></i>
+                <p>Order ORD-002 has been shipped.</p>
+            </div>
+
         </div>
+
+    </div>
+
+    <span>
+        <i class="fa-solid fa-user"></i><br>
+        Paul
+    </span>
+
+</div>
     </header>
 
     <div class="container">
@@ -152,6 +186,47 @@
         </table>
 
     </section>
+
+    <section class="low-stock"><h2>Low Stock Alerts</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Current Stock</th>
+                <th>Minimum Stock</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Sugar</td>
+                <td>8</td>
+                <td>20</td>
+                <td class="low">Low Stock</td>
+            </tr>
+
+            <tr>
+                <td>Milk</td>
+                <td>12</td>
+                <td>25</td>
+                <td class="low">Low Stock</td>
+            </tr>
+
+            <tr>
+                <td>Cooking Oil</td>
+                <td>5</td>
+                <td>15</td>
+                <td class="critical">Critical</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</section>
 
 </main>
     

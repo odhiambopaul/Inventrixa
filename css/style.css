@@ -241,3 +241,78 @@ tr:hover {
 .sales-chart {
     grid-column: 1 / -1;
 }
+
+/* Low Stock Alerts */
+
+.low-stock {
+    margin-top: 40px;
+}
+
+.low-stock h2 {
+    margin-bottom: 20px;
+}
+
+.low {
+    color: #d97706;
+    font-weight: bold;
+}
+
+.critical {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* Notifications */
+
+.notification-wrapper {
+    position: relative;
+}
+
+#notificationButton {
+    cursor: pointer;
+}
+
+.notification-panel {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 320px;
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.notification-panel.show {
+    display: block;
+}
+
+.notification-panel h3 {
+    margin-bottom: 15px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.notification:last-child {
+    border-bottom: none;
+}
+
+.notification i {
+    font-size: 18px;
+}
+
+.notification p {
+    margin: 0;
+    color: #555;
+}
+
+

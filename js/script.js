@@ -50,7 +50,7 @@ new Chart(topProductsCtx, {
     }
 });
 
-// Inventory by Category Chart
+// Inventory by Category Chartk
 
 const inventoryCtx = document.getElementById('inventoryChart');
 
@@ -73,4 +73,14 @@ new Chart(inventoryCtx, {
             }
         }
     }
+});
+// ==============================
+// NOTIFICATIONS
+// ==============================
+
+const notificationButton = document.getElementById('notificationButton');
+const notificationPanel = document.getElementById('notificationPanel');
+
+notificationButton.addEventListener('click', function () {
+    notificationPanel.classList.toggle('show');
 });
