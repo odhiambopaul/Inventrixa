@@ -1,90 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Inventrixa</title>
+    <title>Add Product - Inventrixa</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="logo">
-
+<header class="header">
+    <div class="logo">
         <h1>Inventrixa</h1>
         <p>Inventory and Order Management System</p>
-        </div>
-
-        <div class="search">
-            <input type="text" placeholder="search...">
-        </div>
-
-        <div class="user">
-            <span>🔔</span>
-        <span>👤 Paul</span>
-        </div>
-    </header>
-
-    <div class="container">
-hh 
-       <aside class="sidebar">
-
-    <ul>
-
-        <li><a href="index.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
-
-        <li><a href="products.html"><i class="fa-solid fa-boxes-stacked"></i> Inventory</a></li>
-
-        <li><a href="add-product.html" class="active"><i class="fa-solid fa-square-plus"></i> Add Product</a></li>
-
-        <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Categories</a></li>
-
-        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Orders</a></li>
-
-        <li><a href="#"><i class="fa-solid fa-users"></i> Customers</a></li>
-
-        <li><a href="suppliers.html"><i class="fa-solid fa-truck"></i>Suppliers</a></li>
-
-        <li><a href="sales.html"><i class="fa-solid fa-cash-register"></i> Sales</a></li>
-
-        <li><a href="reports.html"><i class="fa-solid fa-chart-pie"></i>Reports</a></li>
-
-        <li><a href="settings.html"> <i class="fa-solid fa-gear"></i>Settings</a></li>
-
-        <li><a href="login.html"> <i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
-
-    </ul>
-
-</aside>
-
-       
-<main>
-
-    <h2>Add Product</h2>
-
-    <form class="product-form">
-
-    <div class="form-group">
-        <label for="product-name">Product Name</label>
-        <input
-            type="text"
-            id="product-name"
-            placeholder="Enter product name"
-        >
     </div>
 
-</form>
-   
-
-</main>
-    
-
-        
-
+    <div class="user">
+        <span><i class="fa-solid fa-user"></i> Paul</span>
     </div>
+</header>
 
+<div class="container">
+
+    <aside class="sidebar">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+            <li><a href="products.html"><i class="fa-solid fa-boxes-stacked"></i> Inventory</a></li>
+            <li><a href="add-product.html" class="active"><i class="fa-solid fa-square-plus"></i> Add Product</a></li>
+            <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Categories</a></li>
+            <li><a href="orders.html"><i class="fa-solid fa-cart-shopping"></i> Orders</a></li>
+            <li><a href="customers.html"><i class="fa-solid fa-users"></i> Customers</a></li>
+            <li><a href="suppliers.html"><i class="fa-solid fa-truck"></i> Suppliers</a></li>
+            <li><a href="sales.html"><i class="fa-solid fa-cash-register"></i> Sales</a></li>
+            <li><a href="reports.html"><i class="fa-solid fa-chart-pie"></i> Reports</a></li>
+            <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <h2>Add New Product</h2>
+        <p>Enter the details below to add a product to your inventory.</p>
+
+        <form id="productForm" class="product-form">
+
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <input type="text" id="productName"
+                       placeholder="e.g. Sugar" required>
+            </div>
+
+            <div class="form-group">
+                <label for="productCategory">Category</label>
+                <select id="productCategory" required>
+                    <option value="">Select category</option>
+                    <option value="Food">Food</option>
+                    <option value="Dairy">Dairy</option>
+                    <option value="Beverages">Beverages</option>
+                    <option value="Cleaning">Cleaning</option>
+                    <option value="Personal Care">Personal Care</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="productQuantity">Quantity in Stock</label>
+                <input type="number" id="productQuantity"
+                       min="0" step="1" placeholder="e.g. 50" required>
+            </div>
+
+            <div class="form-group">
+                <label for="buyingPrice">Buying Price (KSh)</label>
+                <input type="number" id="buyingPrice"
+                       min="0" step="0.01" placeholder="e.g. 150" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sellingPrice">Selling Price (KSh)</label>
+                <input type="number" id="sellingPrice"
+                       min="0" step="0.01" placeholder="e.g. 200" required>
+            </div>
+
+            <div class="form-group">
+                <label for="minimumStock">Minimum Stock Level</label>
+                <input type="number" id="minimumStock"
+                       min="0" step="1" value="10" required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="add-btn">
+                    <i class="fa-solid fa-floppy-disk"></i> Save Product
+                </button>
+
+                <button type="reset" class="cancel-btn">
+                    Clear Form
+                </button>
+            </div>
+
+        </form>
+
+        <p id="formMessage" role="status" aria-live="polite"></p>
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
